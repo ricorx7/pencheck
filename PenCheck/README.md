@@ -2,7 +2,7 @@
 
 Create a basic CRUD application that behaves as described below. Write the application in a manner that you would in your daily work.
 
-The files can be open in VisualStudio
+The files can be open in VisualStudio Community 2019
 
 # Start Debugging 
 
@@ -15,8 +15,31 @@ npm run serve
 
 Press F5 to start running the ASP.net Server
 
-#SQLite
+---
+
+# Usage
+Home will take you to all the Plans.  It will allow you to view, add and remove the Plans.  You can click on Edit to view all Participants in the Plan.  You can also change the name of the plan.  The table on Home displays the Plan name, number of Participants and the Edit and Remove button.
+
+The Participant link will take you the page to add and display all the participants.  The Edit button will allow you to edit the Participant and the Remove will remove the Participant.  The number in the list indicates the index for the Participant's plan.  In the future, the INNER JOIN will make this show the actual plan name.'
+
+The About link will give the version number and author of the code.
+
+The data is stored to an SQLite database.
+---
+
+# SQLite
 The SQLite database file is located in the project folder (Pencheck.db).  It will contain all the data locally.
+
+
+# Model Update
+If the model is updated, run the following commands in the Package Manager Console
+```bash
+add-migration MessageAboutChanges -context PencheckContext
+update-database -context PencheckContext
+```
+This will update the database with the latest model changes.
+
+---
 
 # Directory Structure
 There are 2 sections in the directory structure.  The "frontend" folder contains the VueJS frontend.  The remaining folders are used by the ASP.net backend.
@@ -40,6 +63,7 @@ Contains all the data models used in the application.  There are basically 2 mod
 ## Pages
 Contains the template pages.
 
+---
 
 # Design Choices
 Overall to keep the time down, I limited the amount of UX.  There is a lot of things I would have done differently with more time.  But the basic functionally it there.
