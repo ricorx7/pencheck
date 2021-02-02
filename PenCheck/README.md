@@ -25,6 +25,7 @@ The Participant link will take you the page to add and display all the participa
 The About link will give the version number and author of the code.
 
 The data is stored to an SQLite database.
+
 ---
 
 # SQLite
