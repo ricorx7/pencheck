@@ -15,6 +15,8 @@ npm run serve
 
 Press F5 to start running the ASP.net Server
 
+#SQLite
+The SQLite database file is located in the project folder (Pencheck.db).  It will contain all the data locally.
 
 # Directory Structure
 There are 2 sections in the directory structure.  The "frontend" folder contains the VueJS frontend.  The remaining folders are used by the ASP.net backend.
@@ -63,5 +65,8 @@ To handle thousands of participants, I would add pagnation to list all the parti
 ## Link the Participants in Plan to the Edit Page
 I would have linked the participants in the plan page to there edit page to quickly edit a user.  
 
-# INNER JOIN
+## INNER JOIN
 I would have done an INNER JOIN with the participant and plan data, so I would have the plan information for each participant.  I felt is was implied that this would have been done during production, but not necessary right now.
+
+## Vuex
+I did not need to utilize anything like Vuex.  The plans could have been stored globally to reduce the server calls.

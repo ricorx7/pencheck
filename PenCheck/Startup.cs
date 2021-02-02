@@ -31,11 +31,14 @@ namespace PenCheck
                 configuration.RootPath = "frontend/build";
             });
 
-            services.AddDbContext<ParticipantsContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ParticipantsContext")));
+            //services.AddDbContext<ParticipantsContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("ParticipantsContext")));
 
-            services.AddDbContext<PlansContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("PlansContext")));
+            //services.AddDbContext<PlansContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("PlansContext")));
+
+            // SQLite DB connection
+            services.AddDbContext<PencheckContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

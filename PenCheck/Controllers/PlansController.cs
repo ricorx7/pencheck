@@ -14,9 +14,9 @@ namespace PenCheck.Controllers
     [ApiController]
     public class PlansController : ControllerBase
     {
-        private readonly PlansContext _context;
+        private readonly PencheckContext _context;
 
-        public PlansController(PlansContext context)
+        public PlansController(PencheckContext context)
         {
             _context = context;
         }

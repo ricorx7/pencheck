@@ -14,9 +14,9 @@ namespace PenCheck.Controllers
     [ApiController]
     public class ParticipantsController : ControllerBase
     {
-        private readonly ParticipantsContext _context;
+        private readonly PencheckContext _context;
 
-        public ParticipantsController(ParticipantsContext context)
+        public ParticipantsController(PencheckContext context)
         {
             _context = context;
         }
